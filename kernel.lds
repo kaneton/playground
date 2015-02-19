@@ -83,6 +83,10 @@ SECTIONS
    * __KERNEL_END - end bytes can be allocated when using it.
    */
   PROVIDE(end = .);
+
+  /*
+   * Make space for at least 4K of static free memory for sbrk.
+   */
   . = . + 1;
   PROVIDE(__KERNEL_END = ALIGN(4K));
 
