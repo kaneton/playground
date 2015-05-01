@@ -6,7 +6,7 @@ t_uint8 stack[0x100];
 
 void kernel(void)
 {
-  // #0 this function has a prologue, safe or not depending of the loader
+  // #0 this function has a prologue, safe or not depending on the loader
   // #1 isolate yourself by setting the stack and the frame
   // #2 have fun
   malloc(0x1000);
